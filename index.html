@@ -1,0 +1,271 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>爱游戏体育 · 简明指南</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            background-color: #fafaf8;
+            color: #222;
+            font-family: "Noto Serif SC", "Source Han Serif SC", "Times New Roman", serif;
+            line-height: 1.75;
+            font-weight: 400;
+            -webkit-font-smoothing: antialiased;
+        }
+
+        .container {
+            max-width: 700px;
+            margin: 0 auto;
+            padding: 2rem 1.5rem 3rem;
+        }
+
+        /* hero 横幅 */
+        .hero {
+            margin-bottom: 3rem;
+            padding-top: 2.5rem;
+            border-bottom: 1px solid #e2e0da;
+            padding-bottom: 1.8rem;
+        }
+
+        .hero-label {
+            font-size: 0.75rem;
+            letter-spacing: 0.12em;
+            text-transform: uppercase;
+            color: #8b897f;
+            margin-bottom: 0.75rem;
+        }
+
+        .hero h1 {
+            font-size: 2.4rem;
+            font-weight: 500;
+            letter-spacing: -0.02em;
+            line-height: 1.2;
+            color: #1b1a17;
+            margin-bottom: 0.4rem;
+        }
+
+        .hero .subhead {
+            font-size: 1rem;
+            color: #585650;
+            max-width: 85%;
+            margin-top: 0.25rem;
+        }
+
+        /* 背景说明卡片 */
+        .context-card {
+            background-color: #f3f1ed;
+            padding: 1.8rem 2rem;
+            margin-bottom: 2.5rem;
+            border-radius: 2px;
+        }
+
+        .context-card h2 {
+            font-size: 1.1rem;
+            font-weight: 500;
+            color: #2b2a26;
+            margin-bottom: 0.8rem;
+            letter-spacing: 0.02em;
+        }
+
+        .context-card p {
+            font-size: 0.95rem;
+            color: #3d3c37;
+        }
+
+        /* 正文段落 */
+        .section {
+            margin-bottom: 2.8rem;
+        }
+
+        .section h3 {
+            font-size: 1.2rem;
+            font-weight: 500;
+            color: #1f1e1a;
+            margin-bottom: 0.7rem;
+            border-left: 3px solid #c6c1b5;
+            padding-left: 1rem;
+        }
+
+        .section p {
+            font-size: 1rem;
+            color: #3b3a35;
+            margin-bottom: 0.9rem;
+        }
+
+        .section p:last-child {
+            margin-bottom: 0;
+        }
+
+        /* 内联链接 */
+        a {
+            color: #3f5c4b;
+            text-decoration: underline;
+            text-underline-offset: 3px;
+            text-decoration-thickness: 1px;
+            transition: color 0.2s ease;
+        }
+
+        a:hover {
+            color: #1f342a;
+            text-decoration-thickness: 2px;
+        }
+
+        /* FAQ 摘要 */
+        .faq-note {
+            background: #f9f8f5;
+            border: 1px solid #e6e3dc;
+            padding: 1.5rem 1.8rem;
+            margin: 2.8rem 0 2.2rem;
+            border-radius: 1px;
+        }
+
+        .faq-note h4 {
+            font-size: 0.85rem;
+            letter-spacing: 0.06em;
+            color: #7d7a6f;
+            margin-bottom: 1rem;
+            font-weight: 500;
+        }
+
+        .faq-item {
+            margin-bottom: 1.2rem;
+        }
+
+        .faq-item:last-child {
+            margin-bottom: 0;
+        }
+
+        .faq-item strong {
+            display: block;
+            font-weight: 500;
+            font-size: 0.95rem;
+            color: #2b2a26;
+            margin-bottom: 0.15rem;
+        }
+
+        .faq-item span {
+            font-size: 0.9rem;
+            color: #5b5951;
+        }
+
+        /* 页尾 */
+        .footer-note {
+            margin-top: 3rem;
+            padding-top: 1.5rem;
+            border-top: 1px solid #e2dfd8;
+            font-size: 0.88rem;
+            color: #6f6c62;
+            text-align: center;
+        }
+
+        .footer-note p {
+            margin-bottom: 0.3rem;
+        }
+
+        /* 响应式 */
+        @media (max-width: 600px) {
+            .container {
+                padding: 1.2rem 1rem 2.5rem;
+            }
+
+            .hero h1 {
+                font-size: 1.9rem;
+            }
+
+            .hero .subhead {
+                max-width: 100%;
+                font-size: 0.95rem;
+            }
+
+            .context-card {
+                padding: 1.4rem 1.2rem;
+            }
+
+            .section h3 {
+                font-size: 1.05rem;
+                padding-left: 0.8rem;
+            }
+
+            .faq-note {
+                padding: 1.2rem 1rem;
+            }
+        }
+
+        @media (max-width: 420px) {
+            .hero h1 {
+                font-size: 1.6rem;
+            }
+
+            .context-card p {
+                font-size: 0.9rem;
+            }
+
+            .section p {
+                font-size: 0.93rem;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <!-- hero -->
+        <div class="hero">
+            <div class="hero-label">专题 · 简明指引</div>
+            <h1>爱游戏体育</h1>
+            <div class="subhead">在信息纷杂的线上环境里，一份温和的访问备忘与使用说明。</div>
+        </div>
+
+        <!-- 背景说明 -->
+        <div class="context-card">
+            <h2>为什么需要一份指南</h2>
+            <p>许多人初次接触线上体育服务时，面对众多的选项和界面，往往感到难以判断。事实上，一个靠谱的起点，比什么都重要。这里不堆砌功能列表，也不罗列术语，只从最实用的角度，梳理你真正该留意的地方。</p>
+        </div>
+
+        <!-- 三段自然介绍 -->
+        <div class="section">
+            <h3>找到适合你的入口</h3>
+            <p>无论你关注的是赛事数据、场次整合还是日常资讯，选择一个稳定的平台是第一步。目前，<a href="https://page-aigame.com">爱游戏体育</a>提供了一条较为清晰的路径——页面结构直接，省去了反复跳转的麻烦。初次访问时，建议花几分钟浏览整体布局，留意导航分区和内容分类，这比直接搜索某个功能更有效率。</p>
+        </div>
+
+        <div class="section">
+            <h3>留意界面与操作习惯</h3>
+            <p>不同平台的交互设计各有侧重。有的偏向移动端触控，有的在桌面浏览器上更完整。根据自己常用的设备，适当调整显示比例或收藏常用链接，能减少后续的重复操作。需要提醒的是，在输入任何个人信息前，先确认页面地址是否为官方来源。你可以在浏览器地址栏核对域名是否包含 <code>page-aigame.com</code>，这是最简单也最可靠的一步。</p>
+        </div>
+
+        <div class="section">
+            <h3>保持浏览与判断的节奏</h3>
+            <p>线上内容更新频繁，但不必每次都追着最新消息跑。设定一个固定的查看频率——比如每周一次——反而更容易掌握整体动态。同时，对那些弹窗、悬浮广告或要求下载额外插件的提示保持适度警惕。真正有价值的信息，通常不需要通过夸张的动画或催促式的文案来呈现。</p>
+        </div>
+
+        <!-- FAQ 摘要（克制版） -->
+        <div class="faq-note">
+            <h4>常见疑问·摘要</h4>
+            <div class="faq-item">
+                <strong>页面加载偏慢怎么办？</strong>
+                <span>首先检查本地网络；其次可尝试清空浏览器缓存。若仍有问题，可稍后重试，服务器端偶有波动。</span>
+            </div>
+            <div class="faq-item">
+                <strong>是否必须注册才能浏览？</strong>
+                <span>大部分内容可以直接查看，部分互动功能可能需要登记。以实际页面提示为准。</span>
+            </div>
+            <div class="faq-item">
+                <strong>如何确认链接安全？</strong>
+                <span>始终从浏览器手动输入域名，或使用可信的书签。避免通过第三方论坛的未验证链接跳转。</span>
+            </div>
+        </div>
+
+        <!-- 页尾访问提示 -->
+        <div class="footer-note">
+            <p>如果你还没有明确的起点，可以从 <a href="https://page-aigame.com">爱游戏体育</a> 开始，观察它的内容组织方式，再决定是否适合自己。</p>
+            <p style="margin-top: 0.6rem; font-size: 0.8rem; color: #9a978c;">—— 保持适度，比什么都重要 ——</p>
+        </div>
+    </div>
+</body>
+</html>

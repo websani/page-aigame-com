@@ -1,0 +1,3 @@
+User-agent: *
+Allow: /
+Sitemap: https://websani.github.io/page-aigame-com/sitemap.xml
